@@ -1,0 +1,40 @@
+package com.hibernatedemo.serviceimpl;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.hibernatedemo.model.College;
+import com.hibernatedemo.service.CollegeService;
+import com.hibernatedemo.util.SessionFactoryUtil;
+
+public class CollegeServiceImpl implements CollegeService {
+		
+	SessionFactory sessionFactory;
+	
+	public CollegeServiceImpl() {
+		
+		sessionFactory = SessionFactoryUtil.getSessionFacotroy();
+		
+	}
+	
+
+	public int addCollege(College college) {
+		
+		Session session =  sessionFactory.openSession();
+		Transaction transaction = session.beginTransaction();
+		session.persist(college);
+		transaction.commit();
+		System.out.println("Data Saved Success");
+		session.close();
+		return 1;
+		
+	}
+
+	public int updateCollege(College college) {
+		return 0;
+		
+	}
+	
+
+}

@@ -1,0 +1,36 @@
+package com.advancedjava.class7;
+
+import java.util.Scanner;
+
+public class Question {
+
+	public static void main(String[] args) {
+		int a;
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter nth term:");
+		a =  input.nextInt();
+		int result = calculateSum(20);
+		System.out.println(result);
+//		calculateSum(a);
+	}
+
+	public static int calculateSum(int a) {
+		
+		int sum = 0;
+		for(int i=0;i<a;i++) {
+			Scanner number = new Scanner(System.in);
+			System.out.println("Enter the number");
+			int b =  number.nextInt();
+			
+			if(b>0) {
+				sum = sum+a;
+			}
+			if(b<0) {
+				return sum;
+			}
+		
+		
+	}
+		return sum;
+	}
+}

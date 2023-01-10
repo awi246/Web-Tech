@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.advancedjava.class10.useOfThisDemo&apos; to &apos;DemoThis&apos;&#x0D;&#x0A;- Original project: &apos;LearningJava&apos;&#x0D;&#x0A;- Original element: &apos;com.advancedjava.class10.useOfThisDemo&apos;&#x0D;&#x0A;- Renamed element: &apos;com.advancedjava.class10.DemoThis&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;useOfThisDemo&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.advancedjava.class10{useOfThisDemo.java[useOfThisDemo" matchStrategy="1" name="DemoThis" qualified="false" references="true" similarDeclarations="false" stamp="1654395555778" textual="false" version="1.0"/>
+</session>
